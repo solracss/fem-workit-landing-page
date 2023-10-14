@@ -58,13 +58,16 @@ ul {
 	}
 
 	@include pseudo(after) {
-		left: 0;
-		bottom: -4rem;
-		background-color: $clr-primary-400;
+		--size: 4.7vw;
+
 		width: 100%;
-		height: 10rem;
-		clip-path: ellipse(50% 25% at 50% 50%);
-		transform: scale(1.2);
+		height: var(--size);
+		left: 0;
+		bottom: calc(var(--size) * -1);
+		background-image: url('/assets/images/curve-purple.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 100%;
 	}
 }
 
