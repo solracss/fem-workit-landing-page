@@ -106,6 +106,61 @@ h3 {
 }
 
 .features {
-	padding-top: 10rem;
+	padding: 10rem 0 3.125rem;
 	background-color: $clr-primary-100;
+
+	@include pseudo() {
+		background-image: url('/assets/images/curve-purple-light.svg');
+	}
+
+	&-list {
+		counter-reset: counter;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+
+	&-list-item {
+		counter-increment: counter;
+
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		@include pseudo($pos: relative, $content: counter(counter)) {
+			font-size: $fs-20;
+			font-family: $ff-accent;
+			font-weight: $fw-semibold;
+			border: 1px solid black;
+			border-radius: 50%;
+			width: 3rem;
+			aspect-ratio: 1 / 1;
+			align-self: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	& .feature {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		&-title {
+			font-weight: $fw-semibold;
+			font-size: $fs-28;
+			line-height: 2.25rem;
+			color: $clr-primary-400;
+		}
+
+		&-description {
+		}
+	}
+}
+
+.features::before {
+}
+
+.cta-box {
+	padding-top: 10rem;
 }
