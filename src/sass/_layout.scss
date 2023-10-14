@@ -3,7 +3,7 @@
 body {
 	min-height: 100vh;
 	min-height: 100dvh;
-	font-size: $fs-18;
+	font-size: $fs-16;
 	font-weight: $fw-regular;
 	font-family: $ff-base;
 	color: $clr-primary-300;
@@ -13,6 +13,12 @@ body {
 ol,
 ul {
 	list-style: none;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $ff-accent;
 }
 
 .header {
@@ -42,7 +48,6 @@ ul {
 	&-heading {
 		max-width: 25rem;
 		margin-inline: auto;
-		font-family: $ff-accent;
 		font-size: $fs-50;
 		color: $clr-neutral-100;
 		line-height: 1;
