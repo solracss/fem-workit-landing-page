@@ -18,6 +18,10 @@ ul {
 .header {
 	padding-block: 2rem;
 	background-color: $clr-primary-400;
+
+	@include media(x-large) {
+		padding-block: 3.5rem;
+	}
 }
 
 .hero {
@@ -25,6 +29,15 @@ ul {
 	padding: 2rem 0 7.75rem;
 	text-align: center;
 	background-color: $clr-primary-400;
+
+	@include media(medium) {
+		padding-bottom: 12.5rem;
+	}
+
+	@include media(x-large) {
+		padding-top: 0;
+		padding-bottom: 20.375rem;
+	}
 
 	&-heading {
 		max-width: 25rem;
@@ -34,6 +47,15 @@ ul {
 		color: $clr-neutral-100;
 		line-height: 1;
 		font-weight: $fw-semibold;
+
+		@include media(medium) {
+			font-size: $fs-60;
+		}
+
+		@include media(x-large) {
+			max-width: 35rem;
+			font-size: $fs-80;
+		}
 
 		& .underline {
 			text-decoration: 0.1875rem underline;
@@ -55,6 +77,13 @@ ul {
 		margin-inline: auto;
 		max-width: 18.25rem;
 		margin-top: 4rem;
+
+		@include media(medium) {
+			max-width: 30rem;
+		}
+		@include media(x-large) {
+			max-width: 44.6875rem;
+		}
 	}
 
 	@include pseudo(after) {
