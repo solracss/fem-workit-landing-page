@@ -1,0 +1,14 @@
+@use './base' as *;
+
+a.btn,
+button.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	&:focus {
+		outline-style: solid;
+		outline-color: transparent;
+	}
+}

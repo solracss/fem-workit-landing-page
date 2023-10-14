@@ -1,0 +1,11 @@
+@use './base' as *;
+
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	font-size: $fs-16;
+	font-weight: $fw-regular;
+	font-family: $ff-base;
+	color: $clr-primary-700;
+	background-color: $clr-neutral-150;
+}
