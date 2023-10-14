@@ -19,3 +19,56 @@ ul {
 	padding-block: 2rem;
 	background-color: $clr-primary-400;
 }
+
+.hero {
+	position: relative;
+	padding: 2rem 0 7.75rem;
+	text-align: center;
+	background-color: $clr-primary-400;
+
+	&-heading {
+		max-width: 25rem;
+		margin-inline: auto;
+		font-family: $ff-accent;
+		font-size: $fs-50;
+		color: $clr-neutral-100;
+		line-height: 1;
+		font-weight: $fw-semibold;
+
+		& .underline {
+			text-decoration: 0.1875rem underline;
+			text-underline-offset: 0.4rem;
+			text-decoration-color: $clr-accent-400;
+		}
+
+		& + .btn {
+			margin-top: 2.5rem;
+		}
+	}
+
+	&-img {
+		z-index: 1;
+		position: absolute;
+		bottom: -30%;
+		left: 0;
+		right: 0;
+		margin-inline: auto;
+		max-width: 18.25rem;
+		margin-top: 4rem;
+	}
+
+	@include pseudo(after) {
+		left: 0;
+		bottom: -4rem;
+		background-color: $clr-primary-400;
+		width: 100%;
+		height: 10rem;
+		clip-path: ellipse(50% 25% at 50% 50%);
+		transform: scale(1.2);
+	}
+}
+
+.features {
+	padding-top: 10rem;
+	background-color: $clr-primary-100;
+}
