@@ -89,14 +89,13 @@ $fw-bold: 700;
 
 @font-face {
 	font-family: $ff-accent;
-	font-weight: $fw-semibold;
-	src: url('/assets/fonts/Fraunces.woff2') format('woff2-variations');
+	src: url('/assets/fonts/Fraunces_144pt-SemiBold.woff2')
+		format('woff2-variations');
 }
 
 @font-face {
 	font-family: $ff-base;
-	font-weight: $fw-regular $fw-bold;
-	src: url('/assets/fonts/Manrope.woff2') format('woff2-variations');
+	src: url('/assets/fonts/Manrope-Regular.woff2') format('woff2-variations');
 }
 
 $fs-11: 0.6875rem;
@@ -111,6 +110,7 @@ $fs-28: 1.75rem;
 $fs-32: 2rem;
 $fs-40: 2.5rem;
 $fs-48: 3rem;
+$fs-50: 3.125rem;
 $fs-56: 3.5rem;
 $fs-64: 4rem;
 $fs-80: 5rem;
