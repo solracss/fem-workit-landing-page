@@ -30,11 +30,26 @@ h3 {
 	}
 }
 
+.hero,
+.features {
+	@include pseudo() {
+		--size: 4.7vw;
+
+		width: 100%;
+		height: var(--size);
+		left: 0;
+		bottom: calc(var(--size) * -1);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 100%;
+	}
+}
+
 .hero {
-	position: relative;
 	padding: 2rem 0 7.75rem;
 	text-align: center;
 	background-color: $clr-primary-400;
+	z-index: 1;
 
 	@include media(medium) {
 		padding-bottom: 12.5rem;
@@ -91,17 +106,8 @@ h3 {
 		}
 	}
 
-	@include pseudo(after) {
-		--size: 4.7vw;
-
-		width: 100%;
-		height: var(--size);
-		left: 0;
-		bottom: calc(var(--size) * -1);
+	@include pseudo() {
 		background-image: url('/assets/images/curve-purple.svg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position-y: 100%;
 	}
 }
 
