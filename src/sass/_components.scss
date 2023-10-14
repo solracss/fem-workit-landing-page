@@ -33,3 +33,15 @@ button.btn {
 		color: $clr-accent-400;
 	}
 }
+
+.link {
+	font-size: $fs-16;
+	color: $clr-neutral-100;
+	line-height: 2rem;
+	letter-spacing: -0.01em;
+	border-bottom: 0.1875em solid $clr-accent-400;
+	transition: color 0.3s;
+	&:hover {
+		color: $clr-accent-400;
+	}
+}
