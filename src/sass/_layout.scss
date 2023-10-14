@@ -9,3 +9,13 @@ body {
 	color: $clr-primary-300;
 	background-color: $clr-neutral-100;
 }
+
+ol,
+ul {
+	list-style: none;
+}
+
+.header {
+	padding-block: 2rem;
+	background-color: $clr-primary-400;
+}
