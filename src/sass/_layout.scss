@@ -211,9 +211,35 @@ h3 {
 	}
 }
 
-.features::before {
-}
-
 .cta-box {
 	padding-top: 7.375rem;
+
+	&-image {
+		max-width: 17.5rem;
+		margin: auto;
+	}
+
+	& .card {
+		position: relative;
+		top: -3.125rem;
+		padding: 2rem;
+		background-color: $clr-primary-400;
+		color: $clr-neutral-100;
+		text-align: center;
+		display: grid;
+		gap: 1rem;
+
+		&-heading {
+			font-size: $fs-32;
+			line-height: 3rem;
+		}
+
+		&-description {
+			line-height: 1.75rem;
+		}
+
+		& .btn {
+			place-self: center;
+		}
+	}
 }
