@@ -53,11 +53,16 @@ h3 {
 
 	@include media(medium) {
 		padding-bottom: 12.5rem;
+		background-image: url('../assets/images/bg-pattern-1.svg'),
+			url('../assets/images/bg-pattern-2.svg');
+		background-repeat: no-repeat;
+		background-position: top 0 left -225px, bottom 75px right -95px;
 	}
 
 	@include media(x-large) {
 		padding-top: 0;
 		padding-bottom: 20.375rem;
+		background-position: top 0 left -135px, bottom 200px right -50px;
 	}
 
 	&-heading {
@@ -267,6 +272,17 @@ h3 {
 			bottom: 0;
 			right: 1.5rem;
 			text-align: left;
+
+			&::after {
+				position: absolute;
+				content: '';
+				background-image: url('../assets/images/bg-pattern-1.svg');
+				background-size: cover;
+				width: 13.5rem;
+				height: 13rem;
+				bottom: -6rem;
+				right: 0.625rem;
+			}
 		}
 
 		@include media(x-large) {
@@ -275,6 +291,11 @@ h3 {
 			max-width: 45.625rem;
 			right: 0;
 			bottom: 3.75rem;
+
+			&::after {
+				bottom: -4rem;
+				right: 4.5rem;
+			}
 		}
 
 		&-heading {
