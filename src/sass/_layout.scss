@@ -213,14 +213,38 @@ h3 {
 
 .cta-box {
 	padding-top: 7.375rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	max-width: 43.125rem;
+	margin-inline: auto;
+
+	@include media(medium) {
+		align-items: flex-start;
+	}
+
+	@include media(x-large) {
+		max-width: none;
+		padding-top: 10.75rem;
+	}
 
 	&-image {
 		max-width: 17.5rem;
 		margin: auto;
+
+		@include media(medium) {
+			margin: 0;
+		}
+
+		@include media(x-large) {
+			max-width: 30rem;
+		}
 	}
 
 	& .card {
 		position: relative;
+		margin: auto;
 		top: -3.125rem;
 		padding: 2rem;
 		background-color: $clr-primary-400;
@@ -228,18 +252,51 @@ h3 {
 		text-align: center;
 		display: grid;
 		gap: 1rem;
+		max-width: 32.125rem;
+
+		@include media(medium) {
+			text-align: left;
+			margin: 0;
+			top: -8.125rem;
+			padding: 3rem 3.5rem 3.5rem;
+			gap: 1.5rem;
+			align-self: flex-end;
+		}
+
+		@include media(x-large) {
+			padding: 4rem;
+			gap: 2rem;
+			max-width: 45.625rem;
+			top: -19rem;
+		}
 
 		&-heading {
 			font-size: $fs-32;
 			line-height: 3rem;
+
+			@include media(medium) {
+				font-size: $fs-48;
+			}
+
+			@include media(x-large) {
+				font-size: $fs-56;
+			}
 		}
 
 		&-description {
 			line-height: 1.75rem;
+
+			@include media(x-large) {
+				font-size: $fs-18;
+			}
 		}
 
 		& .btn {
 			place-self: center;
+
+			@include media(medium) {
+				place-self: start;
+			}
 		}
 	}
 }
