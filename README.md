@@ -53,3 +53,23 @@ npm run dev
 [![My Skills](https://skillicons.dev/icons?i=html,css,sass,vscode,vite)](https://skillicons.dev)
 
 ### What I learned
+
+1. Working with curved svg is not an easy stuff ;). Spent buch of time tried to set those for two sections.
+   Managed finally to achieve this effect with
+
+````css
+@include pseudo() {
+		--size: 4.7vw;
+    background-image: url('/assets/images/curve-purple.svg');
+		width: 100%;
+		height: var(--size);
+		left: 0;
+		bottom: calc(var(--size) * -1);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 100%;
+	}```
+
+````
+
+2. Another project that allowed me to train positioning elements. Here it was section with image and card.
