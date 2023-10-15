@@ -291,11 +291,43 @@ h3 {
 			}
 		}
 
-		& .btn {
+		.btn {
 			place-self: center;
 
 			@include media(medium) {
 				place-self: start;
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1.5rem 0 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 3.5rem;
+
+	.socials {
+		display: flex;
+
+		&-link {
+			padding: 0.875rem;
+
+			&:focus {
+				outline-style: solid;
+				outline-color: transparent;
+				box-shadow: 0 0 0 4px scale-color($clr-focus-400);
+			}
+		}
+
+		&-icon {
+			fill: $clr-primary-300;
+			transition: fill 0.3s;
+
+			&:hover {
+				fill: $clr-primary-400;
 			}
 		}
 	}
